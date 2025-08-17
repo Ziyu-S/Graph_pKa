@@ -1,0 +1,3 @@
+Model,PDB ID,Chain,Res ID,Res Name,model pKa,Predict pKa,Target pKa,Predict pKa shift,Target pKa shift
+1,1ANS,A,20,GLU,4.2,4.216320991516113,,0.0163209915161131,
+1,1ANS,A,26,LYS,10.4,10.336315155029297,,-0.0636848449707034,
