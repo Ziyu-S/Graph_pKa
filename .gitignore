@@ -6,7 +6,6 @@ env/
 .vscode/
 .idea/
 
-Data/
 Results/
 *.pt
 *.pth
