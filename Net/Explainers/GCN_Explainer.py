@@ -147,7 +147,7 @@ if __name__ == "__main__":
     torch.backends.cudnn.benchmark = False
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         
-    model_dir = "/Graph_pKa/Results/GCN_Grid_Search/6/saved_models/dataset_2/loss_MSELoss_h64_b16_p20_f10_lr0.006_d0.3"
+    model_dir = "/Graph_pKa/Results/GCN_Grid_Search/saved_models/dataset_2/loss_MSELoss_h64_b16_p20_f10_lr0.006_d0.3"
     hparams, pth_files = load_models_and_hparams(model_dir)
     print(f"Found {len(pth_files)} pth files")
     print("Detected hyperparameters:", {k: v for k, v in hparams.items() if k.endswith("_name") or k in ("hidden_channels","batch_size","learning_rate","dropout")})
@@ -175,6 +175,6 @@ if __name__ == "__main__":
         'Feature_Index': np.arange(len(global_feature_importance)),
         'Importance': global_feature_importance
     })
-    mean_importance_df.to_csv('/Graph_pKa/Results/GCN_Grid_Search/6/Feature_Importance/GCN_Feature_Importance_1.csv', index=False)
+    mean_importance_df.to_csv('/Graph_pKa/Results/GCN_Grid_Search/Feature_Importance/GCN_Feature_Importance_1.csv', index=False)
 
 
