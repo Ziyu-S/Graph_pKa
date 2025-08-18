@@ -84,7 +84,7 @@ def main(base_dir):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate pKa dataset PKL files")
-    parser.add_argument("--base_dir", type=str, default="/home/ziyu-song/Graph_pKa/Data",
+    parser.add_argument("--base_dir", type=str, default="/../../Graph_pKa/Data",
                         help="Base directory containing the data folders")
     args = parser.parse_args()
 
