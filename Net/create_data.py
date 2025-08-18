@@ -9,14 +9,16 @@ from torch_geometric.data import Data
 
 
 def main(base_dir):
+    base_dir = Path(base_dir)  
+
     # Directories for adjacency matrices and node feature sets
-    adjacency_matrix_dir = os.path.join(base_dir, 'Adj_Matrix/With_Self_Loop/With_Self_Loop')
+    adjacency_matrix_dir = base_dir / 'Adj_Matrix' / 'With_Self_Loop'
     node_feature_dirs = [
-        os.path.join(base_dir, '4_Residues_W_Local_Frame/7'),
-        os.path.join(base_dir, '4_Residues_W_Local_Frame/8'),
-        os.path.join(base_dir, '4_Residues_W_Local_Frame/9'),
-        os.path.join(base_dir, '4_Residues_W_Local_Frame/10'),
-        os.path.join(base_dir, '4_Residues_W_Local_Frame/11')
+        base_dir / '4_Residues_W_Local_Frame' / '7',
+        base_dir / '4_Residues_W_Local_Frame' / '8',
+        base_dir / '4_Residues_W_Local_Frame' / '9',
+        base_dir / '4_Residues_W_Local_Frame' / '10',
+        base_dir / '4_Residues_W_Local_Frame' / '11'
     ]
 
     # Output directory for saving datasets as PKL
@@ -84,8 +86,8 @@ def main(base_dir):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate pKa dataset PKL files")
-    parser.add_argument("--base_dir", type=str, default="/../../Graph_pKa/Data",
+    parser.add_argument("--base_dir", type=str, default="Data",
                         help="Base directory containing the data folders")
     args = parser.parse_args()
-
-    main(args.base_dir)
+    base_dir = Path(__file__).parent.parent / args.base_dir
+    main(base_dir)
