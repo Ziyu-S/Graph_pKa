@@ -150,7 +150,7 @@ if __name__ == "__main__":
     torch.backends.cudnn.benchmark = False
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         
-    model_dir = "../../Results/GAT_Grid_Search/saved_models/dataset_4_3/loss_MSELoss_h48_b32_lr0.01_d0.5_hd4"
+    model_dir = "../../Results/GAT_Grid_Search/saved_models/dataset_3/loss_MSELoss_h48_b32_lr0.01_d0.5_hd4"
     hparams, pth_files = load_models_and_hparams(model_dir)
     print(f"Found {len(pth_files)} pth files")
     print("Detected hyperparameters:", {k: v for k, v in hparams.items() if k.endswith("_name") or k in ("hidden_channels","batch_size","learning_rate","dropout")})
