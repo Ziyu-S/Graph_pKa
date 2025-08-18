@@ -150,12 +150,12 @@ if __name__ == "__main__":
     torch.backends.cudnn.benchmark = False
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         
-    model_dir = "/Graph_pKa/Results/GAT_Grid_Search/saved_models/dataset_4_3/loss_MSELoss_h48_b32_lr0.01_d0.5_hd4"
+    model_dir = "../../Results/GAT_Grid_Search/saved_models/dataset_4_3/loss_MSELoss_h48_b32_lr0.01_d0.5_hd4"
     hparams, pth_files = load_models_and_hparams(model_dir)
     print(f"Found {len(pth_files)} pth files")
     print("Detected hyperparameters:", {k: v for k, v in hparams.items() if k.endswith("_name") or k in ("hidden_channels","batch_size","learning_rate","dropout")})
 
-    data_pkl_path = "/Graph_pKa/Data/4_Residues_W_Local_Frame/Subsets/data_list_3.pkl"
+    data_pkl_path = "../../Data/4_Residues_W_Local_Frame/Subsets/data_list_3.pkl"
     
     procs = 1 if device.type == "cuda" else min(len(pth_files), mp.cpu_count())
     
@@ -179,6 +179,6 @@ if __name__ == "__main__":
         'Feature_Index': np.arange(len(global_feature_importance)),
         'Importance': global_feature_importance
     })
-    mean_importance_df.to_csv('/Graph_pKa/Results/GAT_Grid_Search/Feature_Importance/GAT_Feature_Importance_1.csv', index=False)
+    mean_importance_df.to_csv('../../Results/GAT_Grid_Search/Feature_Importance/GAT_Feature_Importance_1.csv', index=False)
 
 
