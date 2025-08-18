@@ -90,10 +90,16 @@ class GATConv(torch.nn.Module):
 
 
 
-def save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout, heads):
+def save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout, heads, base_dir):
     # Define output directory
-    output_dir = f"{base_dir}/all_best_predictions/dataset_4_{dataset_idx}/{loss_function.__class__.__name__}_hidden_{hidden_channels}_bs_{batch_size}_lr_{lr}_dropout_{dropout}_head_{heads}"
-    os.makedirs(output_dir, exist_ok=True)
+    base_dir = Path(base_dir)
+    output_dir = (
+        base_dir
+        / "all_best_predictions"
+        / f"dataset_4_{dataset_idx}"
+        / f"{loss_function.__class__.__name__}_hidden_{hidden_channels}_bs_{batch_size}_lr_{lr}_dropout_{dropout}_head_{heads}"
+    )
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     # Construct filename with hyperparameters
     filename = f"predictions_dataset_4_{dataset_idx}_loss_{loss_function.__class__.__name__}_hidden_{hidden_channels}_bs_{batch_size}_lr_{lr}_dropout_{dropout}_head_{heads}.csv"
@@ -239,7 +245,7 @@ def train_and_evaluate(loss_function, hidden_channels, batch_size, patience, k_f
     avg_mae = mae_scores/ total_samples_fold
     avg_rmse = torch.sqrt(torch.tensor(mse_scores / total_samples_fold)).item()
     # Save predictions to CSV
-    save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout, heads)
+    save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout, heads, base_dir)
     return (dataset_idx, loss_function.__class__.__name__, hidden_channels, batch_size, patience, k_folds, lr, dropout, heads, avg_mae, avg_rmse)
 
 if __name__ == "__main__":
