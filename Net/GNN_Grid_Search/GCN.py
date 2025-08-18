@@ -85,7 +85,7 @@ class GCNNet(torch.nn.Module):
         return x
 
 
-def save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout):
+def save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout, base_dir):
     # Define output directory
     base_dir = Path(base_dir)
     output_dir = base_dir / "all_best_predictions" / f"dataset_{dataset_idx}" / f"{loss_function.__class__.__name__}_hidden_{hidden_channels}_bs_{batch_size}_patience_{patience}_kf_{k_folds}_lr_{lr}_dropout_{dropout}"
