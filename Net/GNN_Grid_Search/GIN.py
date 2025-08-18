@@ -18,8 +18,8 @@ from torch_geometric.nn import GINConv, global_mean_pool, global_add_pool
 from torch_geometric.loader import DataLoader
 
 # Edit here to use your dir
-base_dir = "/Graph_pKa/Results/GIN_Grid_Search"
-DATASET_DIR = Path("/Graph_pKa/Data/4_Residues_W_Local_Frame/Subsets")
+base_dir = "../../Results/GIN_Grid_Search"
+DATASET_DIR = "../../Data/4_Residues_W_Local_Frame/Subsets"
 
 def set_seed(seed=42):
     random.seed(seed)  
