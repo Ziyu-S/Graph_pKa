@@ -94,11 +94,16 @@ class GINLayer(torch.nn.Module):
         return x
 
 
-def save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout, pooling_function):
+def save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout, pooling_function, base_dir):
     # Define output directory
-    os.makedirs(base_dir, exist_ok=True)
-    output_dir = f"{base_dir}/all_best_predictions/dataset_{dataset_idx}/{loss_function.__class__.__name__}_hidden_{hidden_channels}_bs_{batch_size}_lr_{lr}_dropout_{dropout}_pooling_fn_{pooling_function.__name__}"
-    os.makedirs(output_dir, exist_ok=True)
+    base_dir = Path(base_dir)
+    output_dir = (
+        base_dir
+        / "all_best_predictions"
+        / f"dataset_{dataset_idx}"
+        / f"{loss_function.__class__.__name__}_hidden_{hidden_channels}_bs_{batch_size}_lr_{lr}_dropout_{dropout}_pooling_fn_{pooling_function.__name__}"
+    )
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     # Construct filename with hyperparameters
     filename = f"predictions_dataset{dataset_idx}_loss_{loss_function.__class__.__name__}_hidden_{hidden_channels}_bs_{batch_size}_lr_{lr}_dropout_{dropout}_pooling_fn_{pooling_function.__name__}.csv"
@@ -243,7 +248,7 @@ def train_and_evaluate(loss_function, hidden_channels, batch_size, patience, k_f
     avg_mae = mae_scores/ total_samples_fold
     avg_rmse = torch.sqrt(torch.tensor(mse_scores / total_samples_fold)).item()
     # Save predictions to CSV
-    save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout, pooling_function)
+    save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout, pooling_function, base_dir)
     return (dataset_idx, loss_function.__class__.__name__, hidden_channels, batch_size, patience, k_folds, lr, dropout, pooling_function.__name__, avg_mae, avg_rmse)
 
 if __name__ == "__main__":
