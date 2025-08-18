@@ -155,12 +155,12 @@ if __name__ == "__main__":
     torch.backends.cudnn.benchmark = False
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         
-    model_dir = "/Graph_pKa/Results/GIN_Grid_Search/saved_models/dataset_2/loss_MSELoss_h64_b24_lr0.006_d0.3_p<function global_mean_pool at 0x7363c8dd6ca0>"
+    model_dir = "../../Results/GIN_Grid_Search/saved_models/dataset_2/loss_MSELoss_h64_b24_lr0.006_d0.3_p<function global_mean_pool at 0x7363c8dd6ca0>"
     hparams, pth_files = load_models_and_hparams(model_dir)
     print(f"Found {len(pth_files)} pth files")
     print("Detected hyperparameters:", {k: v for k, v in hparams.items() if k.endswith("_name") or k in ("hidden_channels","batch_size","learning_rate","dropout")})
 
-    data_pkl_path = "/Graph_pKa/Data/4_Residues_W_Local_Frame/Subsets/data_list_2.pkl"
+    data_pkl_path = "../../Data/4_Residues_W_Local_Frame/Subsets/data_list_2.pkl"
     
     hidden_channels = hparams["hidden_channels"]
     dropout = hparams["dropout"]
@@ -187,6 +187,6 @@ if __name__ == "__main__":
         'Feature_Index': np.arange(len(global_feature_importance)),
         'Importance': global_feature_importance
     })
-    mean_importance_df.to_csv('/Graph_pKa/Results/GIN_Grid_Search/Feature_Importance/GIN_Feature_Importance_1.csv', index=False)
+    mean_importance_df.to_csv('../../Results/GIN_Grid_Search/Feature_Importance/GIN_Feature_Importance_1.csv', index=False)
 
 
