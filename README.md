@@ -21,4 +21,40 @@ pip install -r requirements.txt
 ```
 ## **Data:**
 The processed data for each protein residue generated from simulations are provided in `/Data/`, including data from [PKAD-2](http://compbio.clemson.edu/PKAD-2/) (for wild-type proteins, `../WT/`) and [PKAD-R](http://compbio.clemson.edu/PKAD-R/) (for mutant proteins, `../Mutant/`).
-## **Models:**
+## **Model Training:**
+All models for the three architectures (**GCN**, **GIN**, and **GAT**) obtained during the hyperparameter grid search and trained on five datasets (with different radii) are provided in this repository.
+
+You can also run the grid search training from scratch.
+### Step 1: Generate the training datasets:
+
+```bash
+python create_data.py
+```
+### Step 2: Train the model (GAT as an example):
+
+```bash
+python GAT.py
+```
+
+## **Make Predictions:**
+**Note:** While Conda provides a Tinker 8.11.3 package installation via:
+```bash
+conda install bioconda::tinker
+```
+
+the packaged version contains known source-code issues that result in invalid `.uind` files (induced dipole moment files), which are required files for model inference.
+
+As a result, Tinker must be downloaded and compiled from [TinkerTools](https://github.com/TinkerTools). 
+Detailed compilation instructions are available [here](https://dasher.wustl.edu/tinker/).
+
+---
+
+### Step 1: PDB Processing for Tinker Simulations:
+### Step 2: Feature Extraction from Simulations Files:
+### Step 3: Model Inference:
+
+## **Benchmarking Results:**
+Predictions from three benchmarking models (**PROPKA**, **DeepKa**, and **PKAI+** on both **WT** and **Mutant** proteins, as reported in the paper from papaer for benchmarking are provided in the `/Benchmarking/` dir.
+
+## **Contact:**
+For any questions regarding the code or the papaer, please feel free to contact: **zsong01@villanova.edu**
