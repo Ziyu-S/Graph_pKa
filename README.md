@@ -49,10 +49,18 @@ Detailed compilation instructions are available [here](https://dasher.wustl.edu/
 
 ---
 
-### Step 1: PDB Processing for Tinker Simulations:
-### Step 2: Feature Extraction from Simulations Files:
+### Step 1: HTP Tinker Simulations:
+```bash
+python Tinker_EM.py
+```
+### Step 2: Feature Extraction from Simulations Files and Data Generation:
+```bash
+python Tinker_Output_Processing.py
+```
 ### Step 3: Model Inference:
-
+```bash
+python Predict.py
+```
 ## **Benchmarking Results:**
 Predictions from three benchmarking models (**PROPKA**, **DeepKa**, and **PKAI+** on both **WT** and **Mutant** proteins, as reported in the paper from papaer for benchmarking are provided in the `/Benchmarking/` dir.
 
