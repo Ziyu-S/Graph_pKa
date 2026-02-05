@@ -65,4 +65,4 @@ python Predict.py
 Predictions from three benchmarking models (**PROPKA**, **DeepKa**, and **PKAI+** on both **WT** and **Mutant** proteins, as reported in the paper from papaer for benchmarking are provided in the `/Benchmarking/` dir.
 
 ## **Contact:**
-For any questions regarding the code or the papaer, please feel free to contact: **zsong01@villanova.edu**
+For any questions regarding the code or the papaer, please feel free to contact: **songziyu0220@gmail.com** or **zuyi.huang@villanova.edu**
