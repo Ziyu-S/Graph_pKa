@@ -98,7 +98,7 @@ def save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hi
 
     # Construct filename with hyperparameters
     filename = f"predictions_dataset{dataset_idx}_loss_{loss_function.__class__.__name__}_hidden_{hidden_channels}_bs_{batch_size}_patience_{patience}_kf_{k_folds}_lr_{lr}_dropout_{dropout}.csv"
-    output_csv_path = output_dir/filename
+    output_csv_path = output_dir/ filename
 
     # Convert to Pandas DataFrame and save
     df_predictions = pd.DataFrame(all_best_predictions)
@@ -239,7 +239,7 @@ def train_and_evaluate(loss_function, hidden_channels, batch_size, patience, k_f
     avg_mae = mae_scores/ total_samples_fold
     avg_rmse = torch.sqrt(torch.tensor(mse_scores / total_samples_fold)).item()
     # Save predictions to CSV
-    save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout)
+    save_predictions_to_csv(all_best_predictions, dataset_idx, loss_function, hidden_channels, batch_size, patience, k_folds, lr, dropout, base_dir)
     return (dataset_idx, loss_function.__class__.__name__, hidden_channels, batch_size, patience, k_folds, lr, dropout, avg_mae, avg_rmse)
 
 
@@ -247,7 +247,7 @@ if __name__ == "__main__":
 
     # Get the number of available CPU cores
     available_cores = multiprocessing.cpu_count()
-    num_cores = min(60, available_cores - 3)  # Use up to 60 cores
+    num_cores = min(60, available_cores - 10)  # Use up to 60 cores
     print(f"Using {num_cores} CPU cores for parallel training.")
 
     # Load data (makes input_dim & Residue_Type_labels available for train_and_evaluate)

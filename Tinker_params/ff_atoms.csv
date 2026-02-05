@@ -1,0 +1,366 @@
+atom_number,atom_type,Atom Name,Description,Atomic Number,Atomic Mass,Valence
+1,1,N,"""Glycine N""",7,14.007,3
+2,2,CA,"""Glycine CA""",6,12.011,4
+3,3,C,"""Glycine C""",6,12.011,3
+4,4,HN,"""Glycine HN""",1,1.008,1
+5,5,O,"""Glycine O""",8,15.999,1
+6,6,H,"""Glycine HA""",1,1.008,1
+7,1,N,"""Alanine N""",7,14.007,3
+8,7,CA,"""Alanine CA""",6,12.011,4
+9,3,C,"""Alanine C""",6,12.011,3
+10,4,HN,"""Alanine HN""",1,1.008,1
+11,5,O,"""Alanine O""",8,15.999,1
+12,6,H,"""Alanine HA""",1,1.008,1
+13,8,C,"""Alanine CB""",6,12.011,4
+14,9,H,"""Alanine HB""",1,1.008,1
+15,7,C,"""Valine CB""",6,12.011,4
+16,6,H,"""Valine HB""",1,1.008,1
+17,8,C,"""Valine CG""",6,12.011,4
+18,9,H,"""Valine HG""",1,1.008,1
+19,8,C,"""Leucine CB""",6,12.011,4
+20,9,H,"""Leucine HB""",1,1.008,1
+21,7,C,"""Leucine CG""",6,12.011,4
+22,6,H,"""Leucine HG""",1,1.008,1
+23,8,C,"""Leucine CD""",6,12.011,4
+24,9,H,"""Leucine HD""",1,1.008,1
+25,7,C,"""Isoleucine CB""",6,12.011,4
+26,6,H,"""Isoleucine HB""",1,1.008,1
+27,8,C,"""Isoleucine CG1""",6,12.011,4
+28,9,H,"""Isoleucine HG1""",1,1.008,1
+29,8,C,"""Isoleucine CG2""",6,12.011,4
+30,9,H,"""Isoleucine HG2""",1,1.008,1
+31,8,C,"""Isoleucine CD""",6,12.011,4
+32,9,H,"""Isoleucine HD""",1,1.008,1
+33,8,C,"""Serine CB""",6,12.011,4
+34,9,H,"""Serine HB""",1,1.008,1
+35,10,OH,"""Serine OG""",8,15.999,2
+36,11,HO,"""Serine HG""",1,1.008,1
+37,7,C,"""Threonine CB""",6,12.011,4
+38,6,H,"""Threonine HB""",1,1.008,1
+39,10,OH,"""Threonine OG1""",8,15.999,2
+40,11,HO,"""Threonine HG1""",1,1.008,1
+41,8,C,"""Threonine CG2""",6,12.011,4
+42,9,H,"""Threonine HG2""",1,1.008,1
+43,8,C,"""Cysteine CB""",6,12.011,4
+44,9,H,"""Cysteine HB""",1,1.008,1
+45,12,SH,"""Cysteine SG""",16,32.066,2
+46,13,HS,"""Cysteine HG""",1,1.008,1
+47,12,SS,"""Cystine SG""",16,32.066,2
+48,7,CA,"""Cysteine Anion CA""",6,12.011,4
+49,14,S,"""Cysteine Anion S-""",16,32.066,1
+50,15,N,"""Proline N""",7,14.007,3
+51,7,CA,"""Proline CA""",6,12.011,4
+52,3,C,"""Proline C""",6,12.011,3
+53,5,O,"""Proline O""",8,15.999,1
+54,6,H,"""Proline HA""",1,1.008,1
+55,16,C,"""Proline CB""",6,12.011,4
+56,9,H,"""Proline HB""",1,1.008,1
+57,16,C,"""Proline CG""",6,12.011,4
+58,9,H,"""Proline HG""",1,1.008,1
+59,16,C,"""Proline CD""",6,12.011,4
+60,6,H,"""Proline HD""",1,1.008,1
+61,8,C,"""Phenylalanine CB""",6,12.011,4
+62,9,H,"""Phenylalanine HB""",1,1.008,1
+63,17,C,"""Phenylalanine CG""",6,12.011,3
+64,17,C,"""Phenylalanine CD""",6,12.011,3
+65,18,H,"""Phenylalanine HD""",1,1.008,1
+66,17,C,"""Phenylalanine CE""",6,12.011,3
+67,18,H,"""Phenylalanine HE""",1,1.008,1
+68,17,C,"""Phenylalanine CZ""",6,12.011,3
+69,18,H,"""Phenylalanine HZ""",1,1.008,1
+70,8,C,"""Tyrosine CB""",6,12.011,4
+71,9,H,"""Tyrosine HB""",1,1.008,1
+72,17,C,"""Tyrosine CG""",6,12.011,3
+73,17,C,"""Tyrosine CD""",6,12.011,3
+74,18,H,"""Tyrosine HD""",1,1.008,1
+75,17,C,"""Tyrosine CE""",6,12.011,3
+76,18,H,"""Tyrosine HE""",1,1.008,1
+77,17,C,"""Tyrosine CZ""",6,12.011,3
+78,19,OH,"""Tyrosine OH""",8,15.999,2
+79,20,HO,"""Tyrosine HH""",1,1.008,1
+80,8,C,"""Tyrosine Anion CB""",6,12.011,4
+81,9,H,"""Tyrosine Anion HB""",1,1.008,1
+82,17,C,"""Tyrosine Anion CG""",6,12.011,3
+83,17,C,"""Tyrosine Anion CD""",6,12.011,3
+84,18,H,"""Tyrosine Anion HD""",1,1.008,1
+85,17,C,"""Tyrosine Anion CE""",6,12.011,3
+86,18,H,"""Tyrosine Anion HE""",1,1.008,1
+87,17,C,"""Tyrosine Anion CZ""",6,12.011,3
+88,21,O-,"""Tyrosine Anion O-""",8,15.999,1
+89,8,C,"""Tryptophan CB""",6,12.011,4
+90,9,H,"""Tryptophan HB""",1,1.008,1
+91,22,C,"""Tryptophan CG""",6,12.011,3
+92,22,C,"""Tryptophan CD1""",6,12.011,3
+93,23,H,"""Tryptophan HD1""",1,1.008,1
+94,22,C,"""Tryptophan CD2""",6,12.011,3
+95,24,N,"""Tryptophan NE1""",7,14.007,3
+96,25,HN,"""Tryptophan HE1""",1,1.008,1
+97,22,C,"""Tryptophan CE2""",6,12.011,3
+98,22,C,"""Tryptophan CE3""",6,12.011,3
+99,23,H,"""Tryptophan HE3""",1,1.008,1
+100,22,C,"""Tryptophan CZ2""",6,12.011,3
+101,23,H,"""Tryptophan HZ2""",1,1.008,1
+102,22,C,"""Tryptophan CZ3""",6,12.011,3
+103,23,H,"""Tryptophan HZ3""",1,1.008,1
+104,22,C,"""Tryptophan CH2""",6,12.011,3
+105,23,H,"""Tryptophan HH2""",1,1.008,1
+106,8,C,"""Histidine (+) CB""",6,12.011,4
+107,9,H,"""Histidine (+) HB""",1,1.008,1
+108,26,C,"""Histidine (+) CG""",6,12.011,3
+109,24,N,"""Histidine (+) ND1""",7,14.007,3
+110,25,HN,"""Histidine (+) HD1""",1,1.008,1
+111,26,C,"""Histidine (+) CD2""",6,12.011,3
+112,27,H,"""Histidine (+) HD2""",1,1.008,1
+113,28,C,"""Histidine (+) CE1""",6,12.011,3
+114,27,H,"""Histidine (+) HE1""",1,1.008,1
+115,24,N,"""Histidine (+) NE2""",7,14.007,3
+116,25,HN,"""Histidine (+) HE2""",1,1.008,1
+117,8,C,"""Histidine (HD) CB""",6,12.011,4
+118,9,H,"""Histidine (HD) HB""",1,1.008,1
+119,26,C,"""Histidine (HD) CG""",6,12.011,3
+120,24,N,"""Histidine (HD) ND1""",7,14.007,3
+121,25,HN,"""Histidine (HD) HD1""",1,1.008,1
+122,26,C,"""Histidine (HD) CD2""",6,12.011,3
+123,27,H,"""Histidine (HD) HD2""",1,1.008,1
+124,28,C,"""Histidine (HD) CE1""",6,12.011,3
+125,27,H,"""Histidine (HD) HE1""",1,1.008,1
+126,29,N,"""Histidine (HD) NE2""",7,14.007,2
+127,8,C,"""Histidine (HE) CB""",6,12.011,4
+128,9,H,"""Histidine (HE) HB""",1,1.008,1
+129,26,C,"""Histidine (HE) CG""",6,12.011,3
+130,29,N,"""Histidine (HE) ND1""",7,14.007,2
+131,26,C,"""Histidine (HE) CD2""",6,12.011,3
+132,27,H,"""Histidine (HE) HD2""",1,1.008,1
+133,28,C,"""Histidine (HE) CE1""",6,12.011,3
+134,27,H,"""Histidine (HE) HE1""",1,1.008,1
+135,24,N,"""Histidine (HE) NE2""",7,14.007,3
+136,25,HN,"""Histidine (HE) HE2""",1,1.008,1
+137,8,C,"""Aspartate CB""",6,12.011,4
+138,9,H,"""Aspartate HB""",1,1.008,1
+139,30,C,"""Aspartate CG""",6,12.011,3
+140,31,O,"""Aspartate OD""",8,15.999,1
+141,8,C,"""Aspartic Acid CB""",6,12.011,4
+142,9,H,"""Aspartic Acid HB""",1,1.008,1
+143,32,C,"""Aspartic Acid CG""",6,12.011,3
+144,33,O,"""Aspartic Acid OD1""",8,15.999,1
+145,34,OH,"""Aspartic Acid OD2""",8,15.999,2
+146,35,HO,"""Aspartic Acid HD2""",1,1.008,1
+147,8,C,"""Asparagine CB""",6,12.011,4
+148,9,H,"""Asparagine HB""",1,1.008,1
+149,3,C,"""Asparagine CG""",6,12.011,3
+150,5,O,"""Asparagine OD1""",8,15.999,1
+151,1,N,"""Asparagine ND2""",7,14.007,3
+152,4,HN,"""Asparagine HD2""",1,1.008,1
+153,8,C,"""Glutamate CB""",6,12.011,4
+154,9,H,"""Glutamate HB""",1,1.008,1
+155,8,C,"""Glutamate CG""",6,12.011,4
+156,9,H,"""Glutamate HG""",1,1.008,1
+157,30,C,"""Glutamate CD""",6,12.011,3
+158,31,O,"""Glutamate OE""",8,15.999,1
+159,8,C,"""Glutamic Acid CB""",6,12.011,4
+160,9,H,"""Glutamic Acid HB""",1,1.008,1
+161,8,C,"""Glutamic Acid CG""",6,12.011,4
+162,9,H,"""Glutamic Acid HG""",1,1.008,1
+163,32,C,"""Glutamic Acid CD""",6,12.011,3
+164,33,O,"""Glutamic Acid OE1""",8,15.999,1
+165,34,O,"""Glutamic Acid OE2""",8,15.999,2
+166,35,H,"""Glutamic Acid HE2""",1,1.008,1
+167,8,C,"""Glutamine CB""",6,12.011,4
+168,9,H,"""Glutamine HB""",1,1.008,1
+169,8,C,"""Glutamine CG""",6,12.011,4
+170,9,H,"""Glutamine HG""",1,1.008,1
+171,3,C,"""Glutamine CD""",6,12.011,3
+172,5,O,"""Glutamine OE1""",8,15.999,1
+173,1,N,"""Glutamine NE2""",7,14.007,3
+174,4,HN,"""Glutamine HE2""",1,1.008,1
+175,8,C,"""Methionine CB""",6,12.011,4
+176,9,H,"""Methionine HB""",1,1.008,1
+177,8,C,"""Methionine CG""",6,12.011,4
+178,9,H,"""Methionine HG""",1,1.008,1
+179,12,S,"""Methionine SD""",16,32.066,2
+180,8,C,"""Methionine CE""",6,12.011,4
+181,9,H,"""Methionine HE""",1,1.008,1
+182,8,C,"""Lysine CB""",6,12.011,4
+183,9,H,"""Lysine HB""",1,1.008,1
+184,36,C,"""Lysine CG""",6,12.011,4
+185,9,H,"""Lysine HG""",1,1.008,1
+186,8,C,"""Lysine CD""",6,12.011,4
+187,9,H,"""Lysine HD""",1,1.008,1
+188,8,C,"""Lysine CE""",6,12.011,4
+189,9,H,"""Lysine HE""",1,1.008,1
+190,37,N,"""Lysine NZ""",7,14.007,4
+191,38,HN,"""Lysine HN""",1,1.008,1
+192,8,C,"""Lysine (Neutral) CB""",6,12.011,4
+193,9,H,"""Lysine (Neutral) HB""",1,1.008,1
+194,36,C,"""Lysine (Neutral) CG""",6,12.011,4
+195,9,H,"""Lysine (Neutral) HG""",1,1.008,1
+196,8,C,"""Lysine (Neutral) CD""",6,12.011,4
+197,9,H,"""Lysine (Neutral) HD""",1,1.008,1
+198,8,C,"""Lysine (Neutral) CE""",6,12.011,4
+199,9,H,"""Lysine (Neutral) HE""",1,1.008,1
+200,37,N,"""Lysine (Neutral) NZ""",7,14.007,3
+201,38,HN,"""Lysine (Neutral) HN""",1,1.008,1
+202,8,C,"""Arginine CB""",6,12.011,4
+203,9,H,"""Arginine HB""",1,1.008,1
+204,8,C,"""Arginine CG""",6,12.011,4
+205,9,H,"""Arginine HG""",1,1.008,1
+206,8,C,"""Arginine CD""",6,12.011,4
+207,9,H,"""Arginine HD""",1,1.008,1
+208,1,N,"""Arginine NE""",7,14.007,3
+209,4,HN,"""Arginine HE""",1,1.008,1
+210,39,C,"""Arginine CZ""",6,12.011,3
+211,1,N,"""Arginine NH""",7,14.007,3
+212,4,HN,"""Arginine HH""",1,1.008,1
+213,8,C,"""Ornithine CB""",6,12.011,4
+214,9,H,"""Ornithine HB""",1,1.008,1
+215,36,C,"""Ornithine CG""",6,12.011,4
+216,9,H,"""Ornithine HG""",1,1.008,1
+217,8,C,"""Ornithine CD""",6,12.011,4
+218,9,H,"""Ornithine HD""",1,1.008,1
+219,37,N,"""Ornithine NE""",7,14.007,4
+220,38,HN,"""Ornithine HE""",1,1.008,1
+221,40,C,"""Acetyl Cap CH3""",6,12.011,4
+222,6,H,"""Acetyl Cap H3C""",1,1.008,1
+223,3,C,"""Acetyl Cap C""",6,12.011,3
+224,5,O,"""Acetyl Cap O""",8,15.999,1
+225,1,N,"""Amide Cap NH2""",7,14.007,3
+226,4,HN,"""Amide Cap H2N""",1,1.008,1
+227,1,N,"""N-MeAmide Cap N""",7,14.007,3
+228,4,HN,"""N-MeAmide Cap HN""",1,1.008,1
+229,40,C,"""N-MeAmide Cap CH3""",6,12.011,4
+230,6,H,"""N-MeAmide Cap H3C""",1,1.008,1
+231,41,N,"""N-Terminal NH3+""",7,14.007,4
+232,42,H,"""N-Terminal H3N+""",1,1.008,1
+233,30,C,"""C-Terminal COO-""",6,12.011,3
+234,31,O,"""C-Terminal COO-""",8,15.999,1
+235,32,C,"""C-Terminal COOH C=O""",6,12.011,3
+236,33,O,"""C-Terminal COOH O=C""",8,15.999,1
+237,34,OH,"""C-Terminal COOH OH""",8,15.999,2
+238,35,HO,"""C-Terminal COOH HO""",1,1.008,1
+239,41,N,"""N-Terminal PRO NH2+""",7,14.007,4
+240,42,HN,"""N-Terminal PRO H2N+""",1,1.008,1
+241,7,CA,"""N-Terminal PRO CA""",6,12.011,4
+242,3,C,"""N-Terminal PRO C""",6,12.011,3
+243,5,O,"""N-Terminal PRO O""",8,15.999,1
+244,6,H,"""N-Terminal PRO HA""",1,1.008,1
+245,16,C,"""N-Terminal PRO CD""",6,12.011,4
+246,6,H,"""N-Terminal PRO HD""",1,1.008,1
+247,43,C,"""Adenine C4""",6,12.011,3
+248,44,C,"""Adenine C8""",6,12.011,3
+249,45,C,"""Adenine C6""",6,12.011,3
+250,43,C,"""Adenine C5""",6,12.011,3
+251,46,N,"""Adenine N9 RNA""",7,14.007,3
+252,46,N,"""Adenine N9 DNA""",7,14.007,3
+253,47,N,"""Adenine N6""",7,14.007,3
+254,48,C,"""Adenine C2""",6,12.011,3
+255,49,N,"""Adenine N7""",7,14.007,2
+256,50,N,"""Adenine N3""",7,14.007,2
+257,50,N,"""Adenine N1""",7,14.007,2
+258,51,H,"""Adenine H8""",1,1.008,1
+259,52,H,"""Adenine H2""",1,1.008,1
+260,53,H,"""Adenine H61""",1,1.008,1
+261,54,N,"""Cytosine N1 RNA""",7,14.007,3
+262,54,N,"""Cytosine N1 DNA""",7,14.007,3
+263,55,C,"""Cytosine C5""",6,12.011,3
+264,47,N,"""Cytosine N4""",7,14.007,3
+265,48,C,"""Cytosine C6""",6,12.011,3
+266,56,C,"""Cytosine C2""",6,12.011,3
+267,45,C,"""Cytosine C4""",6,12.011,3
+268,50,N,"""Cytosine N3""",7,14.007,2
+269,57,H,"""Cytosine H5""",1,1.008,1
+270,58,O,"""Cytosine O2""",8,15.999,1
+271,51,H,"""Cytosine H6""",1,1.008,1
+272,53,H,"""Cytosine H41""",1,1.008,1
+273,59,C,"""Guanine C2""",6,12.011,3
+274,56,C,"""Guanine C6""",6,12.011,3
+275,43,C,"""Guanine C4""",6,12.011,3
+276,44,C,"""Guanine C8""",6,12.011,3
+277,54,N,"""Guanine N1""",7,14.007,3
+278,47,N,"""Guanine N2""",7,14.007,3
+279,43,C,"""Guanine C5""",6,12.011,3
+280,60,N,"""Guanine N9 RNA""",7,14.007,3
+281,60,N,"""Guanine N9 DNA""",7,14.007,3
+282,49,N,"""Guanine N7""",7,14.007,2
+283,50,N,"""Guanine N3""",7,14.007,2
+284,61,H,"""Guanine H1""",1,1.008,1
+285,58,O,"""Guanine O6""",8,15.999,1
+286,51,H,"""Guanine H8""",1,1.008,1
+287,53,H,"""Guanine H21""",1,1.008,1
+288,62,C,"""Thymine C7""",6,12.011,4
+289,48,C,"""Thymine C5""",6,12.011,3
+290,56,C,"""Thymine C4""",6,12.011,3
+291,48,C,"""Thymine C6""",6,12.011,3
+292,63,N,"""Thymine N1""",7,14.007,3
+293,54,N,"""Thymine N3""",7,14.007,3
+294,56,C,"""Thymine C2""",6,12.011,3
+295,64,H,"""Thymine H7""",1,1.008,1
+296,58,O,"""Thymine O2""",8,15.999,1
+297,51,H,"""Thymine H6""",1,1.008,1
+298,58,O,"""Thymine O4""",8,15.999,1
+299,61,H,"""Thymine H3""",1,1.008,1
+300,56,C,"""Uracil C2""",6,12.011,3
+301,48,C,"""Uracil C6""",6,12.011,3
+302,56,C,"""Uracil C4""",6,12.011,3
+303,54,N,"""Uracil N3""",7,14.007,3
+304,63,N,"""Uracil N1""",7,14.007,3
+305,48,C,"""Uracil C5""",6,12.011,3
+306,61,H,"""Uracil H3""",1,1.008,1
+307,52,H,"""Uracil H5""",1,1.008,1
+308,58,O,"""Uracil O2""",8,15.999,1
+309,58,O,"""Uracil O4""",8,15.999,1
+310,51,H,"""Uracil H6""",1,1.008,1
+311,65,O,"""Ribose O4'""",8,15.999,2
+312,66,C,"""Ribose C4'""",6,12.011,4
+313,67,H,"""Ribose H4'""",1,1.008,1
+314,68,C,"""Ribose C1'""",6,12.011,4
+315,67,H,"""Ribose H1'""",1,1.008,1
+316,68,C,"""Ribose C2'""",6,12.011,4
+317,67,H,"""Ribose H2'1""",1,1.008,1
+318,68,C,"""Ribose C3'""",6,12.011,4
+319,67,H,"""Ribose H3'""",1,1.008,1
+320,69,O,"""Ribose O2'""",8,15.999,2
+321,70,H,"""Ribose HO'2""",1,1.008,1
+322,71,O,"""Ribose O3'""",8,15.999,2
+323,70,H,"""Ribose HO'3""",1,1.008,1
+324,72,C,"""Ribose C5'""",6,12.011,4
+325,73,H,"""Ribose H5'""",1,1.008,1
+326,74,O,"""Ribose O5'""",8,15.999,2
+327,70,H,"""Ribose HO'5""",1,1.008,1
+328,75,C,"""Deoxyribose C4'""",6,12.011,4
+329,76,C,"""Deoxyribose C3'""",6,12.011,4
+330,76,C,"""Deoxyribose C2'""",6,12.011,4
+331,76,C,"""Deoxyribose C1'""",6,12.011,4
+332,77,O,"""Deoxyribose O4'""",8,15.999,2
+333,78,H,"""Deoxyribose H2'1""",1,1.008,1
+334,78,H,"""Deoxyribose H1'""",1,1.008,1
+335,78,H,"""Deoxyribose H3'""",1,1.008,1
+336,78,H,"""Deoxyribose H4'""",1,1.008,1
+337,79,C,"""Deoxyribose C5'""",6,12.011,4
+338,80,O,"""Deoxyribose O3'""",8,15.999,2
+339,81,H,"""Deoxyribose HO'3""",1,1.008,1
+340,82,H,"""Deoxyribose H5'1""",1,1.008,1
+341,83,O,"""Deoxyribose O5'""",8,15.999,2
+342,81,H,"""Deoxyribose HO'5""",1,1.008,1
+343,84,P,"""Phosphodiester P""",15,30.974,4
+344,85,O,"""Phosphodiester OP""",8,15.999,1
+345,86,O,"""R-5'-Hydroxyl O5'T""",8,15.999,2
+346,87,O,"""R-3'-Hydroxyl O3'T""",8,15.999,2
+347,88,O,"""D-3'-Hydroxyl O3'T""",8,15.999,2
+348,89,O,"""D-5'-Hydroxyl O5'T""",8,15.999,2
+349,90,O,"""AMOEBA Water O""",8,15.999,2
+350,91,H,"""AMOEBA Water H""",1,1.008,1
+351,92,Li+,"""Lithium Ion Li+""",3,6.941,0
+352,93,Na+,"""Sodium Ion Na+""",11,22.99,0
+353,94,K+,"""Potassium Ion K+""",19,39.098,0
+354,95,Rb+,"""Rubidium Ion Rb+""",37,85.468,0
+355,96,Cs+,"""Cesium Ion Cs+""",55,132.905,0
+356,97,Be2,"""Beryllium Ion Be+2""",4,9.012,0
+357,98,Mg2,"""Magnesium Ion Mg+2""",12,24.305,0
+358,99,Ca2,"""Calcium Ion Ca+2""",20,40.078,0
+359,100,Sr2,"""Strontium Ion Sr+2""",38,87.62,0
+360,101,Ba2,"""Barium Ion Ba+2""",56,137.33,0
+361,102,Zn2,"""Zinc Ion Zn+2""",30,65.38,0
+362,103,F-,"""Fluoride Ion F-""",9,18.998,0
+363,104,Cl-,"""Chloride Ion Cl-""",17,35.453,0
+364,105,Br-,"""Bromide Ion Br-""",35,79.904,0
+365,106,I-,"""Iodide Ion I-""",53,126.904,0

@@ -1,0 +1,24 @@
+
+               #################################################
+               Equilibrated AMOEBA Water Boxes for MD Simulation
+               #################################################
+
+      This directory contains a several water boxes that are equilibrated
+      using the AMOEBA 2003 water model. The "water03.prm" file contains
+      the parameters used for the MD equilibration of each box. The boxes
+      are cubes of size ranging from 30 Ang on a side to 120 Ang in 5 Ang
+      increments. For example, "water80.xyz" and "water80.key" correspond
+      to an 80 Ang cubic system.
+
+      As per the "water03.prm" parameter file, the atom types are 1 for
+      the oxygen atom and 2 for the hydrogens. These atom type numbers can
+      be changed as needed using the Tinker XYZEDIT program. For example,
+      the water atom types in the "amoebabio18.prm" parameters are 349 for
+      the oxygen and 350 for the hydrogens instead of 1 and 2.
+
+      The equilibration of these boxes is specific the AMOEBA 2003 water
+      model. Use of other AMOEBA-like models should only require minimal
+      MD equilibration with the different model. For use with TIP3P or
+      other nonpolarizable models, the box should first be reminimized
+      and then reequilibrated via MD simulation.
+

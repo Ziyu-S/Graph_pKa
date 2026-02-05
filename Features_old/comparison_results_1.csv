@@ -1,0 +1,4 @@
+File,Residue Sequence Number (df2),Residue_Number_PDB (Output),Chain ID (df2),Chain ID (Output),Residue Name (df2),Residue Name (Output)
+../Graph_pKa/Features/8I41/8I41_NEW_ID_Added_Merged.csv,317,317,E,C,Phenylalanine,Phenylalanine
+../Graph_pKa/Features/7XJD/7XJD_NEW_ID_Added_Merged.csv,234,234,A,A,Glutamate,Glutamate
+../Graph_pKa/Features/8UOZ/8UOZ_NEW_ID_Added_Merged.csv,110,110,B,B,Histidine,Histidine
