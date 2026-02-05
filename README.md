@@ -8,7 +8,7 @@ This repository contains the complete implementation of our paper:
 <img width="500" height="321" alt="image" src="https://github.com/user-attachments/assets/c4f7d9b6-1e94-43c8-8bd9-02c51d7e5d3b" />
 
 ## **Environment:**
-### To install the reuquired environment (python=3.11.3) using conda (recomended):
+### To install the reuquired environment (python=3.12.2) using conda (recomended):
 
 ```bash
 conda env create -f environment.yml
@@ -37,14 +37,14 @@ python GAT.py
 ```
 
 ## **Make Predictions:**
-**Note:** While Conda provides a Tinker 8.11.3 package installation via:
+**Note:** Although Conda provides a Tinker **8.11.3** package installation via:
 ```bash
 conda install bioconda::tinker
 ```
 
 the packaged version contains known source-code issues that result in invalid `.uind` files (induced dipole moment files), which are required files for model inference.
 
-As a result, Tinker must be downloaded and compiled from [TinkerTools](https://github.com/TinkerTools). 
+In addition, Tinker **8.11.3** is no longer available. Therefore, a newer Tinker release (`Tinker_Output_Processing.py` is updated for Tinker **25.5.3**) must be downloaded and compiled from [TinkerTools](https://github.com/TinkerTools). 
 Detailed compilation instructions are available [here](https://dasher.wustl.edu/tinker/).
 
 ---
