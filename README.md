@@ -44,7 +44,7 @@ conda install bioconda::tinker
 
 the packaged version contains known source-code issues that result in invalid `.uind` files (induced dipole moment files), which are required files for model inference.
 
-In addition, Tinker **8.11.3** is no longer available. Therefore, a newer Tinker release (`Tinker_Output_Processing.py` is updated for Tinker **25.5.3**) must be downloaded and compiled from [TinkerTools](https://github.com/TinkerTools). 
+In addition, Tinker **8.11.3** is no longer available. Therefore, a newer Tinker release (`Tinker_EM.py` has been updated for Tinker **25.5.3**) must be downloaded and compiled from [TinkerTools](https://github.com/TinkerTools). 
 Detailed compilation instructions are available [here](https://dasher.wustl.edu/tinker/).
 
 ---
