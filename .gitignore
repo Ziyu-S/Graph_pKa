@@ -28,6 +28,5 @@ Data/*
 # Ignore everything inside it
 Data/0_Raw_PDB/*
 
-# But keep the placeholder file
-!Data/0_Raw_PDB/.gitkeep
-
+# But keep the README file
+!Data/0_Raw_PDB/README.md
