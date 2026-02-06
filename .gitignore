@@ -30,3 +30,9 @@ Data/0_Raw_PDB/*
 
 # But keep the README file
 !Data/0_Raw_PDB/README.md
+
+# Features: keep directory but ignore contents
+Features/*
+!Features/
+!Features/README.md
+
