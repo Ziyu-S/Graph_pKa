@@ -18,7 +18,7 @@ from torch_geometric.loader import DataLoader
 
 # Edit here to use your dir
 base_dir = "../../Results/GCN_Grid_Search"
-DATASET_DIR = "../../Data/4_Residues_W_Local_Frame/Subsets"
+DATASET_DIR = "../../PKAD_Data/4_Residues_W_Local_Frame/Subsets"
 
 def set_seed(seed=42):
     random.seed(seed)  
