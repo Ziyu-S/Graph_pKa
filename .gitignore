@@ -29,7 +29,6 @@ Results/GAT_Grid_Search/*
 
 # Ignore binaries everywhere
 *.pt
-*.pth
 *.pkl
 *.npz
 *.npy
