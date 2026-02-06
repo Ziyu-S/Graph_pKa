@@ -28,11 +28,13 @@ You can also run the grid search training from scratch.
 ### Step 1: Generate the PKAD training datasets:
 
 ```bash
+cd Net
 python create_data.py
 ```
 ### Step 2: Train the model (GAT as an example):
 
 ```bash
+cd GNN_Grid_Search
 python GAT.py
 ```
 
