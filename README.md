@@ -19,9 +19,9 @@ or
 ```bash
 pip install -r requirements.txt
 ```
-## **Data:**
-The processed data for each protein residue generated from simulations are provided in `/Data/`, including data from [PKAD-2](http://compbio.clemson.edu/PKAD-2/) (for wild-type proteins, `../WT/`) and [PKAD-R](http://compbio.clemson.edu/PKAD-R/) (for mutant proteins, `../Mutant/`).
-## **Model Training:**
+## **PKAD_Data:**
+The processed dataset for protein residues from [PKAD-2](http://compbio.clemson.edu/PKAD-2/) generated during simulations are provided in `/PKAD_Data/`
+## **Model Training with Hyperparameteres Grid Search from Scratch:**
 All models for the three architectures (**GCN**, **GIN**, and **GAT**) obtained during the hyperparameter grid search and trained on five datasets (with different radii) are provided in this repository.
 
 You can also run the grid search training from scratch.
@@ -61,8 +61,6 @@ python Tinker_Output_Processing.py
 ```bash
 python Predict.py
 ```
-## **Benchmarking Results:**
-Predictions from three benchmarking models (**PROPKA**, **DeepKa**, and **PKAI+** on both **WT** and **Mutant** proteins, as reported in the paper from papaer for benchmarking are provided in the `/Benchmarking/` dir.
 
 ## **Contact:**
 For any questions regarding the code or the papaer, please feel free to contact: **songziyu0220@gmail.com** or **zuyi.huang@villanova.edu**
