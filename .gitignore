@@ -10,7 +10,24 @@ Data_old/
 DeepKa_Results/
 Features_old/
 Mutant_Data/
-Results/
+# Ignore everything under Results
+Results/*
+
+# Re-include selected subfolders
+!Results/GCN_Grid_Search/
+!Results/GIN_Grid_Search/
+!Results/GAT_Grid_Search/
+# Ignore all files inside those subfolders
+Results/GCN_Grid_Search/*
+Results/GIN_Grid_Search/*
+Results/GAT_Grid_Search/*
+
+# Allow README placeholders only
+!Results/GCN_Grid_Search/README.md
+!Results/GIN_Grid_Search/README.md
+!Results/GAT_Grid_Search/README.md
+
+# Ignore binaries everywhere
 *.pt
 *.pth
 *.pkl
@@ -19,6 +36,7 @@ Results/
 *.zip
 *.tar
 *.tar.gz
+
 # Ignore everything under Data
 Data/*
 
