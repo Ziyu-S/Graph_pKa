@@ -25,7 +25,7 @@ The processed dataset for protein residues from [PKAD-2](http://compbio.clemson.
 All models for the three architectures (**GCN**, **GIN**, and **GAT**) obtained during the hyperparameter grid search and trained on five datasets (with different radii) are provided in this repository.
 
 You can also run the grid search training from scratch.
-### Step 1: Generate the training datasets:
+### Step 1: Generate the PKAD training datasets:
 
 ```bash
 python create_data.py
@@ -49,7 +49,10 @@ Detailed compilation instructions are available [here](https://dasher.wustl.edu/
 
 ---
 
-### Step 1: HTP Tinker Simulations:
+### Step 1: HTP Tinker Simulations: 
+
+Raw PDB files are required in `../Graph_pKa/Data/0_Raw_PDB`
+then call:
 ```bash
 python Tinker_EM.py
 ```
