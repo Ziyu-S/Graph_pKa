@@ -335,7 +335,7 @@ if __name__ == "__main__":
     parser.add_argument("--base_dir", type=str, default="../Graph_pKa",
                         help="Base directory containing the data folders")
     parser.add_argument("--model_dir", type=str, 
-                        default="Results/GAT_Grid_Search/loss_MSELoss_h48_b16_lr0.01_d0.3_hd6",
+                        default="Net/GAT_Model",
                         help="Directory containing trained model files")
     args = parser.parse_args()
     
