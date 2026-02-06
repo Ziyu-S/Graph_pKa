@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+.vscode/
+.idea/
+
+Data_old/
+DeepKa_Results/
+Features_old/
+Mutant_Data/
+Results/
+*.pt
+*.pth
+*.pkl
+*.npz
+*.npy
+*.zip
+*.tar
+*.tar.gz
+# Ignore everything under Data
+Data/*
+
+# Re-include the directory itself
+!Data/0_Raw_PDB/
+
+# Ignore everything inside it
+Data/0_Raw_PDB/*
+
+# But keep the placeholder file
+!Data/0_Raw_PDB/.gitkeep
+
