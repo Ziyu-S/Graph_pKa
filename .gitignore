@@ -12,7 +12,8 @@ Features_old/
 Mutant_Data/
 # Ignore everything under Results
 Results/*
-
+!Results/Comparison/
+!Results/Comparison/**
 # Re-include selected subfolders
 !Results/GCN_Grid_Search/
 !Results/GIN_Grid_Search/
